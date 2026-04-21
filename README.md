@@ -9,7 +9,8 @@ This project fine-tunes a Vision-Language Model (VLM) to automatically generate 
 - **Inference & Cleaning Pipeline**: Includes a custom inference pipeline that takes an image of a table, prompts the model, and uses Regex to strip Markdown and output clean, renderable HTML.
 
 ## Dataset
-The dataset consists of images of tables and their corresponding HTML code. The notebook maps the data into a conversational format:
+The dataset used for fine-tuning is **[apoidea/pubtabnet-html](https://huggingface.co/datasets/apoidea/pubtabnet-html)**, sourced from the Hugging Face Hub.
+It consists of images of tables and their corresponding HTML code. The notebook maps the relevant data features into a conversational format:
 * **User**: `[Image]` + "Generate the HTML representation for this table image."
 * **Assistant**: `[HTML Code]`
 
